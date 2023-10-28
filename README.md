@@ -89,6 +89,7 @@ python .\autolabeling.py --mode normal --source "./images" --store "./labels_tes
 ```python=
 python .\autolabeling.py --mode normal --source "./images" --store "./labels_test" --weights "C:\Users\User\autolabeling\yolov5\runs\train\exp3\weights\best.pt"
 ```
+![example](images/example2.png)
 
 
 
