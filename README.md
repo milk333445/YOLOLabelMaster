@@ -37,7 +37,20 @@ classes:
 ```
 
 2. Additionally, you can customize "key_actions" based on your personal preferences to configure custom keyboard triggers for adjusting labeling methods to meet your needs.
-
+```python=
+key_actions:
+  13: 'save' # enter
+  32: 'modify' # space
+  27: 'exit' # esc
+  100: 'pass' # d
+  68: 'pass' # D
+  65: 'previous' # a
+  97: 'previous' # A
+  119: 'switch_prev' # w
+  115: 'switch_next' # s
+  87: 'switch_prev' # W
+  83: 'switch_next' # S
+```
 
 
 
