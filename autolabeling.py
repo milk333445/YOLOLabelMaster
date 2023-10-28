@@ -560,8 +560,6 @@ def run_normal_multilabel(
                         if len(lst_a[0]) != 7:
                             print("Label count hasn't reached the maximum (Please label 7)")
                         else:
-                            lst_a[2] = get_plate_string()
-                            lst_a[0] = sorted(lst_a[0], key=lambda x: x[0])
                             lst = process_image_annotations(lst_a, im_tmp)
                             save_labels_to_file(lst, save_img)
                             img_count += 1
@@ -803,8 +801,6 @@ def run_label_no_model_normal_multilabel(
                 if len(lst_a[0]) != 7:
                     print("Label count hasn't reached the maximum (Please label 7).")
                 else:
-                    lst_a[2] = get_plate_string()
-                    lst_a[0] = sorted(lst_a[0], key=lambda x: x[0])
                     lst = process_image_annotations(lst_a, im_tmp)
                     save_labels_to_file(lst, save_img)
                     img_count += 1
