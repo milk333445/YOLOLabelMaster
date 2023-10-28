@@ -80,6 +80,7 @@ python .\autolabeling.py --mode LPR --source "./images" --store "./labels_test"
 ```python=
 python .\autolabeling.py --mode LPR --source "./images" --store "./labels_test" --weights "C:\Users\User\autolabeling\yolov5\runs\train\exp3\weights\best.pt"
 ```
+![example](images/example1.png)
 ### General Multi-Class Assistance Mode (No Model Pre-labeling)
 ```python=
 python .\autolabeling.py --mode normal --source "./images" --store "./labels_test"
@@ -88,6 +89,7 @@ python .\autolabeling.py --mode normal --source "./images" --store "./labels_tes
 ```python=
 python .\autolabeling.py --mode normal --source "./images" --store "./labels_test" --weights "C:\Users\User\autolabeling\yolov5\runs\train\exp3\weights\best.pt"
 ```
+![example](images/example2.png)
 
 
 
