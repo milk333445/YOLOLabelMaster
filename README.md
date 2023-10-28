@@ -25,6 +25,17 @@ pip install -r requirements.txt
 
 ## Quick Start: Configure autolabel_settings.yaml
 1. Before using this tool, you need to configure autolabel_settings.yaml to set the object classes you want to label. You can define class names by editing the "classes" field in autolabel_settings.yaml. Please be aware that class names will be encoded in the order they appear in the file, such as 0, 1, 2, and so on, so pay special attention to this part.
+```python=
+classes:
+  - A # 0
+  - B # 1
+  - C # 2
+  - D # 3
+  、
+  、
+  、
+```
+
 2. Additionally, you can customize "key_actions" based on your personal preferences to configure custom keyboard triggers for adjusting labeling methods to meet your needs.
 
 
