@@ -56,7 +56,20 @@ key_actions:
 ```python=
 python main.py --mode [choose mode] --last_time_num [last image number] --weights [model weights file path] --source [image folder path] --imagesz [image width] [image height] --conf_thres [object confidence threshold] --iou_thres [NMS IOU threshold] --max_det [maximum detections per image] --store [label storage path]
 ```
-
+- You don't need to configure all parameters every time. Here are detailed explanations of some important parameters such as mode, last_time_num, weights, source, and store:
+  - mode (Mode):
+    - normal (Normal Mode): This is the general mode for multi-class labeling where you can quickly switch object categories using the keyboard.
+    - LPR (License Plate Mode): This mode is designed for annotating license plate characters (default is 3 English characters + 4 numeric characters). In this mode, you will need to input all labels via the terminal.
+  - last_time_num (Last Image Number):
+    - This parameter allows you to quickly jump to a specific image number. If you have previously labeled the first five images, you can input last_time_num 6 to directly jump to labeling the sixth image.
+  - weights (Model Weights File):
+    - If you wish to perform pre-labeling using the YoloV5 model, provide the path to the weight file. The program will automatically switch to pre-labeling mode and give you the option to modify labels or save them directly. 
+  - source (Image Folder Path):
+    - This is a mandatory parameter that specifies the path to the folder containing the images you want to label. 
+  - store (Label Storage Path):
+    - This is also a mandatory parameter that specifies where you want to save the label information.
+   
+Using these parameters, you can easily configure the main program to label your image dataset and perform labeling in different modes according to your needs.
 
 
 
