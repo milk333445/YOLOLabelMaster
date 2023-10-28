@@ -71,6 +71,24 @@ python main.py --mode [choose mode] --last_time_num [last image number] --weight
    
 Using these parameters, you can easily configure the main program to label your image dataset and perform labeling in different modes according to your needs.
 
+## Examples (Four Modes)
+### License Plate Character Mode (No Model Pre-labeling)
+```python=
+python .\autolabeling.py --mode LPR --source "./images" --store "./labels_test"
+```
+### License Plate Character Mode (Model Pre-labeling)
+```python=
+python .\autolabeling.py --mode LPR --source "./images" --store "./labels_test" --weights "C:\Users\User\autolabeling\yolov5\runs\train\exp3\weights\best.pt"
+```
+### General Multi-Class Assistance Mode (No Model Pre-labeling)
+```python=
+python .\autolabeling.py --mode normal --source "./images" --store "./labels_test"
+```
+### General Multi-Class Assistance Mode (Model Pre-labeling)
+```python=
+python .\autolabeling.py --mode normal --source "./images" --store "./labels_test" --weights "C:\Users\User\autolabeling\yolov5\runs\train\exp3\weights\best.pt"
+```
+
 
 
 
