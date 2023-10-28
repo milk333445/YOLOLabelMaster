@@ -7,13 +7,13 @@ class ConfigManager:
        def __init__(self, filepath='./autolabel_settings.yaml'):
               with open(filepath, 'r') as yaml_file:
                      self.data = yaml.safe_load(yaml_file)
-              if 'alphabet_numbers' in self.data:
+              if 'classes' in self.data:
                   # 轉換成字串
-                     self.data['alphabet_numbers'] = [str(x) for x in self.data['alphabet_numbers']]
+                     self.data['classes'] = [str(x) for x in self.data['classes']]
 
        def get_config(self):
             conf = {} # EasyDict()沒辦法處理 key_actions
-            conf['obj'] = self.data['alphabet_numbers']
+            conf['obj'] = self.data['classes']
             conf['drawing'] = self.data['settings']['drawing']
 
             conf['clr'] = [tuple(color) for color in self.data['settings']['clr']]
