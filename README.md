@@ -8,3 +8,34 @@ YOLOLabelMaster is a powerful tool designed specifically for rapid annotation of
 4. Editing and Saving: YOLOLabelMaster enables you to effortlessly edit automatically generated labels to ensure accuracy. Once your labeling is complete, you can conveniently save your work.
 
 Whether you are a professional object recognition engineer or a beginner, YOLOLabelMaster offers a high-efficiency, user-friendly, and feature-rich tool to expedite the process of creating YoloV5 datasets. No longer do you need to spend extensive time manually annotating; now, simply use YOLOLabelMaster as your ultimate labeling assistant.
+
+## How to Use
+1. First, you need to git clone https://github.com/milk333445/YOLOLabelMaster.git
+2. Download the necessary Python packages
+```python=
+git clone https://github.com/milk333445/YOLOLabelMaster.git
+cd YOLOLabelMaster
+pip install -r requirements.txt
+```
+
+## Quick Start: Prepare Your Data
+1. Before you begin, please make sure you have prepared a folder containing the image dataset you want to label (it must contain .jpg, .jpeg, or .png image files). Note that any other file formats will be automatically ignored by the program.
+2. Prepare an empty folder that will be used to store your label data files (.txt). The program will generate corresponding labels in this folder.
+3. If you plan to use the YoloV5 model for automatic labeling, ensure that you have prepared the relevant YoloV5 weight files. You will need to pass them as parameters in the subsequent steps.
+
+## Quick Start: Configure autolabel_settings.yaml
+1. Before using this tool, you need to configure autolabel_settings.yaml to set the object classes you want to label. You can define class names by editing the "classes" field in autolabel_settings.yaml. Please be aware that class names will be encoded in the order they appear in the file, such as 0, 1, 2, and so on, so pay special attention to this part.
+2. Additionally, you can customize "key_actions" based on your personal preferences to configure custom keyboard triggers for adjusting labeling methods to meet your needs.
+
+
+
+
+
+
+
+
+
+
+
+
+
