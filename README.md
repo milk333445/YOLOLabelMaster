@@ -52,7 +52,10 @@ key_actions:
   83: 'switch_next' # S
 ```
 
-
+## Quick Start: Launching the Main Program and Setting Parameters
+```python=
+python main.py --mode [choose mode] --last_time_num [last image number] --weights [model weights file path] --source [image folder path] --imagesz [image width] [image height] --conf_thres [object confidence threshold] --iou_thres [NMS IOU threshold] --max_det [maximum detections per image] --store [label storage path]
+```
 
 
 
