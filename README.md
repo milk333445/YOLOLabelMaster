@@ -1,5 +1,7 @@
 # YOLOLabelMaster
+:::success
 YOLOLabelMaster is a powerful tool designed specifically for rapid annotation of YoloV5 datasets. It not only supports the labeling of general multi-class objects and the drawing of bounding boxes but also comes with advanced automatic annotation features, enabling users to annotate the required objects more swiftly. This tool goes beyond typical object labeling as it includes specialized support for annotating license plate characters, making it easy to mark characters on license plates.
+:::
 
 ## Key Features:
 1. Swift Multi-Class Labeling: YOLOLabelMaster offers an intuitive and efficient interface, allowing you to easily label multiple object classes and draw bounding boxes to create your YoloV5 dataset.
