@@ -557,14 +557,11 @@ def run_normal_multilabel(
                     key = cv2.waitKey(0)
                     action = get_key_action(key)
                     if action == 'save': 
-                        if len(lst_a[0]) != 7:
-                            print("Label count hasn't reached the maximum (Please label 7)")
-                        else:
-                            lst = process_image_annotations(lst_a, im_tmp)
-                            save_labels_to_file(lst, save_img)
-                            img_count += 1
-                            cv2.destroyAllWindows()
-                            break
+                        lst = process_image_annotations(lst_a, im_tmp)
+                        save_labels_to_file(lst, save_img)
+                        img_count += 1
+                        cv2.destroyAllWindows()
+                        break
 
                     elif action in ['switch_next', 'switch_prev']:
                         count = update_label_and_display(action, count, obj, lst_a, im_tmp, file_name) 
@@ -798,14 +795,11 @@ def run_label_no_model_normal_multilabel(
             key = cv2.waitKey(0)
             action = get_key_action(key)
             if action == 'save': 
-                if len(lst_a[0]) != 7:
-                    print("Label count hasn't reached the maximum (Please label 7).")
-                else:
-                    lst = process_image_annotations(lst_a, im_tmp)
-                    save_labels_to_file(lst, save_img)
-                    img_count += 1
-                    cv2.destroyAllWindows()
-                    break
+                lst = process_image_annotations(lst_a, im_tmp)
+                save_labels_to_file(lst, save_img)
+                img_count += 1
+                cv2.destroyAllWindows()
+                break
                 
             elif action in ['switch_next', 'switch_prev']:
                 count = update_label_and_display(action, count, obj, lst_a, im_tmp, file_name)
